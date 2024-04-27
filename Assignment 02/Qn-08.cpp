@@ -22,9 +22,9 @@ void Duplicates (int a[] , int size )
     for (i=0 ; i<20 ; i++)
         cout<<p[i]<<" " ;
 
-    cout<<"\n\nDuplicates Values are : \n" ;
+    cout<<"\n\nAfter Remove Duplicates Values , Array values are : \n" ;
     for (i=0 ; i<20 ; i++)  
-        if (p[i]>1)
+        if (p[i]==1)
             cout<<i<<"  " ;
 
     cout<<endl ;
