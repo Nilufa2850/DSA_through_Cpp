@@ -19,3 +19,26 @@ void ModifyBubbleSort (int *a , int n)
             break ;
     }
 }
+
+//or 
+void ModifyBubbleSort (int a[], int n)
+{
+    int r , i, t ;
+    bool swap ;
+    for (r=1 ; r<=n-1 ; r++)
+    {
+        swap = false ;
+        for (i=0 ; i<= n-r-1 ; i++)
+        {
+            if (a[i]>a[i+1])
+            {
+                t = a[i] ;
+                a[i] = a[i+1] ;
+                a[i+1] = t ;
+                swap = true ;
+            }
+        }
+        if (swap == false)
+            break ;
+    }
+}
