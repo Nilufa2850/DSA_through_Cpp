@@ -1,5 +1,5 @@
 
-//1
+//process 1
 void BubbleSort (int *a , int n) 
 {
     int round , i , temp ;
@@ -13,3 +13,20 @@ void BubbleSort (int *a , int n)
                 a[i] = a[i+1] ;
                 a[i+1] = temp ;
   }}}}
+//process 2
+void BubbleSort (int a[], int n)
+{
+    int r , i, t ;
+    for (r=1 ; r<=n-1 ; r++)
+    {
+        for (i=0 ; i<= n-r-1 ; i++)
+        {
+            if (a[i]>a[i+1])
+            {
+                t = a[i] ;
+                a[i] = a[i+1] ;
+                a[i+1] = t ;
+            }
+        }
+    }
+}
