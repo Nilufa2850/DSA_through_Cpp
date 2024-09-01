@@ -52,7 +52,7 @@ void quickSortLoop (int a[] , int l,int u)
         }
         if (loc < j-1)
         {
-            lower.push(i=loc+1) ;
+            lower.push(loc+1) ;
             upper.push(j) ;
         }
     } 
